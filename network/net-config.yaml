@@ -1,0 +1,12 @@
+imports:
+  - path: network.jinja
+resources:
+- name: network
+  type: network.jinja
+  properties:
+    region: us-central1
+    subnets:
+      - range: 10.177.1.0/24
+        name: public
+      - range: 10.177.2.0/24
+        name: private
